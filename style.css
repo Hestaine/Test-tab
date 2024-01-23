@@ -125,4 +125,7 @@ a:hover{
     .tab_btn{
         width: 60%;
     }
+    .line{
+        top: 5.55rem;
+    }
 }
