@@ -120,7 +120,7 @@ a:hover{
         color: #7360ff;
     }
     .tab_btn{
-        text-size-adjust: 3px;
+        font-size: 3px;
     }
     .tab_box{
         justify-content: space-between;
