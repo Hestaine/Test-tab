@@ -37,26 +37,83 @@ body{
     cursor: pointer;
 }
 .tab_box .tab_btn:hover{
-    filter: brightness(0%);
+    margin-bottom: 10px;
+    background-color: #7360ff;
+    transition: all .7s ease-in-out;
+    padding: 5px 10px;
+    border-radius: 0.4rem;
+    color: whitesmoke;
 }
 .tab_box .tab_btn.active{
     color: #7360ff;
+    transition: all .3s ease-in-out;
+}
+.tab_box .tab_btn.active:hover{
+    color: whitesmoke;
+    transition: all .8s ease-in-out;
 }
 .content_box{
     padding: 18px;
 }
 .content_box .content{
     display: none;
+    animation: moving 1s ease;
+}
+@keyframes moving {
+    from{transform: translateX(50px); opacity: 0;}
+    to{transform: translateX(0px); opacity: 1;}
+}
+.content_box .content.active{
+    display: block;
 }
 .content_box .content h2{
     margin-bottom: 10px;
+    background-color: #7360ff;
+    padding: 5px 10px;
+    border-radius: 7px;
+    color: whitesmoke;
+    box-shadow: 4px 3px 3px 1px #645bac;
+    cursor: pointer;
 }
 .line{
     position: absolute;
     top: 62px;
-    left: 0;
+    left: 17px;
     width: 90px;
     height: 4px;
     background-color: #7360ff;
     border-radius: 10px;
+    transition: all 1s ease-in-out;
+}
+.contact_info{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    margin-top: 1.8rem;
+}
+.contact_links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contact_text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contact{
+    background-color: #7360ff;
+    outline: none;
+    border: none;
+    color: #deeeff;
+    font-weight: 600;
+    border-radius: 5px;
+    box-shadow: 4px 3px 3px 1px #645bac;
+}
+a{
+    text-decoration: none;
+    color: #919191;
+}
+a:hover{
+    color: #7360ff;
 }
