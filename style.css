@@ -118,12 +118,15 @@ a:hover{
     color: #7360ff;
 }
 @media screen and (max-width: 767px){
+    body{
+        overflow: hidden;
+    }
     .container{
         width: 90%;
         padding: 5px;
     }
     .tab_btn{
-        width: 60%;
+        width: 5%;
     }
     .line{
         top: 5.55rem;
