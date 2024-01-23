@@ -120,12 +120,13 @@ a:hover{
         color: #7360ff;
     }
     .tab_btn{
-        padding: none;
-        padding-block: 0;
-        padding-inline: 0;
+        text-size-adjust: 3px;
     }
     .tab_box{
         justify-content: space-between;
+        padding: none;
+        padding-block: 0;
+        padding-inline: 0;
     }
 }
 @media screen and (min-width: 768px){
